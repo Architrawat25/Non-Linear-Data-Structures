@@ -13,6 +13,7 @@ public class Main {
 
         //Max number of nodes for a level are 2^level
 
+        /*
         Bst bst=new Bst();
         bst.insert(54);
         bst.insert(30);
@@ -23,24 +24,41 @@ public class Main {
         bst.insert(36);
         bst.insert(24);
 
-        //Depth First Search
-        //Time complexity: O(n)
-        //In-order traversal prints ascending data
-          bst.inOrder();
-//        System.out.println();
-//        bst.preOrder();
-//        System.out.println();
-//        bst.postOrder();
-//        System.out.println();
+        Depth First Search
+        Time complexity: O(n)
+        In-order traversal prints ascending data
+        bst.inOrder();
+        System.out.println();
+        bst.preOrder();
+        System.out.println();
+        bst.postOrder();
+        System.out.println();
 
-        //Height
-//        bst.getHeight();
+        Height
+        bst.getHeight();
 
-
-//        bst.deleteNode(bst.root, 18);
-//        bst.inOrder();
+        bst.deleteNode(bst.root, 18);
+        bst.inOrder();
         System.out.println();
         bst.bfs();
+         */
+
+        Heap heap=new Heap(50);
+        heap.insert(9);
+        heap.insert(12);
+        heap.insert(25);
+        heap.insert(28);
+        heap.insert(32);
+        heap.insert(60);
+
+        heap.display();
+        System.out.println();
+        System.out.println(heap.extractMax());
+//        heap.display();
+
+
+
+
 
     }
 }

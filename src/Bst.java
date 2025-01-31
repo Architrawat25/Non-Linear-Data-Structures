@@ -3,7 +3,7 @@ import java.util.Queue;
 
 public class Bst {
 
-    static class Node {
+    public static class Node {
         int data;
         Node left;
         Node right;
