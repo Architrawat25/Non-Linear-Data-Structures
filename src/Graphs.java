@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Graphs {
 //    Connected graph: n(E)>=n(V)-1
@@ -30,6 +28,7 @@ public class Graphs {
         }
     }
 
+//    Breath First Search
     public void bfs(int start){
         boolean[] visited=new boolean[V];
         ArrayList<Integer> q=new ArrayList<>();
@@ -50,18 +49,22 @@ public class Graphs {
         }
     }
 
+
+
     public static void main(String[] args) {
-        Graphs graph=new Graphs(6);
-        graph.graph=new int[][]{
-                {0,1,0,1,0,0},
-                {1,0,1,0,0,0},
-                {0,1,0,0,0,1},
-                {0,0,0,0,1,0},
-                {0,0,0,1,0,1},
-                {0,0,1,0,1,0}
-        };
-        graph.dfs(0);
-        System.out.println();
-        graph.bfs(0);
+//        Graphs graph=new Graphs(6);
+//        graph.graph=new int[][]{
+//                {0,1,0,1,0,0},
+//                {1,0,1,0,0,0},
+//                {0,1,0,0,0,1},
+//                {0,0,0,0,1,0},
+//                {0,0,0,1,0,1},
+//                {0,0,1,0,1,0}
+//        };
+//        graph.dfs(0);
+//        System.out.println();
+//        graph.bfs(0);
+
+
     }
 }
